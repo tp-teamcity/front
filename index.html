@@ -1,20 +1,20 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('form').submit(function() {
-                return false;
-            });
-        });
-        function callAPI(form){
+        function callAPI(){
             var input = $('#recherche').val()
             $.ajax({
-                url: "test.html",
-                context: document.body
-            }).done(function() {
+                url: "http://localhost:5000/Upper",
+                context: document.body,
+		method: 'POST',
+		data: input,
+		headers: {
+		  'Access-Control-Allow-Origin': '*'
+		}
+            }).done(function(response) {
                     console.log("appel fini")
+		 $("#cible").text('Resultat : ' + response)
             });
-            $("#cible").text('Resultat : ' + input)
         }
     </script>
 </head>
@@ -22,8 +22,6 @@
     <h1>TEST</h1>
     <h2>Entrez le texte à modifier</h2>
     <h3 id="cible">Resultat : </h3>
-    <form action="callAPI()" onSubmit="callAPI()">
-        <input id="recherche" type="text" name="value">
-        <button type="submit" onclick="submit">Search</button>
-    </form>
+    <input id="recherche" type="text" name="value">
+    <button type="button" onclick="callAPI()">Search</button>
 </body>
