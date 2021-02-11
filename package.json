@@ -1,0 +1,26 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^6.4.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "serve": "serve ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tp-teamcity/front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tp-teamcity/front/issues"
+  },
+  "homepage": "https://github.com/tp-teamcity/front#readme"
+}
