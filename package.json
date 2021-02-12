@@ -9,7 +9,7 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "cypress:open": "cypress open",
+    "cypress:open": "cypress run --headless",
     "serve": "serve ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
