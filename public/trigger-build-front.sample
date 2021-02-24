@@ -1,3 +1,0 @@
-#!/bin/sh
-
-curl -X POST -H "Authorization: Bearer eyJ0eXAiOiAiVENWMiJ9.VFlvblUtYk4xRXRNX1JIYlpfQkxBQWV0SUxr.NzcyMmRiMjUtODczMi00OTk3LWFhNTctMWQ3OTJiYzc2MzQ5" -H "Content-Type: application/xml" -d "<build><buildType id=\"Shout_Build_BuildFront\"/></build>" http://192.168.1.45:8111/app/rest/buildQueue
