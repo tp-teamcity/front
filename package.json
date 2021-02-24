@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "cypress": "^6.4.0",
+    "cypress": "^6.5.0",
     "serve": "^11.3.2"
   },
   "scripts": {
-    "cypress:open": "cypress run --headless",
+    "cypress:run": "cypress run --headless --browser chrome",
     "serve": "serve ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
