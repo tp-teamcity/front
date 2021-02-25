@@ -2,7 +2,7 @@
 function callAPI(){
     var input = $('#recherche').val()
     $.ajax({
-        url: "http://localhost:5000/Upper",
+	    url: "http://192.168.1.45:82/Upper",
         context: document.body,
 	method: 'POST',
 	data: input,
