@@ -1,6 +1,6 @@
 describe('Test e2e', () => {
     before(() => {
-        cy.visit('/')
+        cy.visit('../../public/index.html')
     })
 
     it('je peux remplir le champ texte', () => {
