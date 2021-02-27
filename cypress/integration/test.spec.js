@@ -9,6 +9,6 @@ describe('Test e2e', () => {
     
     it('je peux obtenir le resultat', () => {
         cy.get('button').click()
-        cy.get('#cible').contains('COUCOU')
+        cy.get('#cible').contains('COUCOU test failed')
     })
 })
